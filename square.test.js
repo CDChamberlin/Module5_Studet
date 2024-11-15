@@ -7,6 +7,8 @@ test("Square root of 25 to get 5", () => {
     expect(squareRoot(25)).toBe(5);
 });
 
-test("Square Root of -25 to get Error", () => {
-    expect(squareRoot(-25)).toThrow();
+test("throws error for negative inputs into the squareRoot function", () => {
+    expect(() => squareRoot(-25)).toThrow(
+        "Negative square Roots are imaginary"
+    );
 });
